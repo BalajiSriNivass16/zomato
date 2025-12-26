@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('assets/font.otf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* BODY BACKGROUND – GRADIENT 01 */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff9a00, #ff6a00);
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 50px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.nav-links span {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.signup {
+  background: white;
+  color: #ff6a00;
+  padding: 8px 18px;
+  border-radius: 25px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin: 10px 0 30px;
+}
+
+/* SEARCH */
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-box input {
+  padding: 14px 18px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  width: 240px;
+}
+
+/* MODEL SECTION */
+.model-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+model-viewer {
+  width: 400px;
+  height: 400px;
+  background: transparent;
+}

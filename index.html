@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zomato UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <h2 class="logo">zomato</h2>
+    <div class="clock">
+  <span id="time"></span>
+  <span id="date"></span>
+</div>
+<div class="nav-links">
+  <a href="https://www.zomato.com/" target="_blank" style="background:White; color:black;">
+    <span class="Login">Login</span>
+  </a>
+  <a href="https://www.zomato.com/" target="_blank"  style="background:#ff9a00; color:black;">
+    <span class="signup">Sign Up</span>
+  </a>
+</div>
+
+  </nav>
+
+  <section class="hero">
+    <h1>Discover the best food near you</h1>
+    <p>Order • Dine • Enjoy</p>
+
+    <div class="search-box">
+      <input type="text" placeholder="📍 Location">
+      <input type="text" placeholder="Search for food or restaurant">
+    </div>
+  </section>
+
+  <section class="model-section">
+  <model-viewer
+    src="assets/food.glb"
+    camera-controls
+    auto-rotate
+    rotation-per-second="30deg"
+    auto-rotate-delay="0"
+    disable-zoom
+    exposure="1.1">
+  </model-viewer>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
